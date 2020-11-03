@@ -1,0 +1,106 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    height: 700px;
+    width: 339px;
+    margin: 0 auto;
+}
+.imageContainer{
+    position: absolute;
+    background-image: url("../images/iphone-6.jpg");
+    height: 700px;
+    width: 339px;
+}
+
+.mainContainer{
+    position: absolute;
+    background-color: #2196f3;
+    height: 530px;
+    width: 300px;
+    left: 20px;
+    top: 89px;
+    overflow: auto;
+}
+.mainContainer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+}
+.mainContainer li p{
+    margin: 0 0 0 48px;
+}
+.mainContainer li{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.photoContainer{
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+}
+.photoContainer img{
+    border-radius: 50%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.profileInfo p{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+input{
+    outline: 0;
+    background-color: transparent;
+    border-width: 0 0 1px;
+    border-color: black;
+    margin: 15px 25px;
+    width: 220px;
+    padding-left: 30px;
+}
+.profileInfo i{
+    position: absolute;
+    color:black;
+    left: 35px;
+    top: 230px;
+}
+button{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 240px;
+    height: 40px;
+    margin: 10px 28px;
+}
+
+.bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.bottom i{
+    text-align: center;
+    padding: 10px 30px 4px 25px;
+}
+.bottom a{
+    color: grey;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
