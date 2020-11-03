@@ -1,0 +1,96 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    height: 700px;
+    width: 339px;
+    margin: 0 auto;
+}
+.imageContainer{
+    position: absolute;
+    background-image: url("../images/iphone-6.jpg");
+    height: 700px;
+    width: 339px;
+}
+
+.mainContainer{
+    position: absolute;
+    background-color: #2196f3;
+    height: 530px;
+    width: 300px;
+    left: 20px;
+    top: 89px;
+    overflow: auto;
+}
+.mainContainer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+}
+.mainContainer li p{
+    margin: 0;
+}
+.mainContainer li{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    margin: 0;
+}
+.restaurantsInfo{
+    height: 80px;
+    width: 300px;
+    background-color: white;
+}
+
+.restaurantsImage{
+    background-color: black;
+    border-radius: 5px;
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin: 10px 15px;
+}
+.restaurantsImage img{
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+} 
+.restaurantsName h5{
+    float: left;
+    margin: 15px 0;
+    line-height: 25px;
+}
+.subInfo{
+    color: grey;
+}
+.viewRestaurants i{
+    color: #2196f3;
+    font-size: 20px;
+    margin: 30px 10px 30px 50px;
+}
+hr{
+    margin: 0;
+}
+.bottom{
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.bottom i{
+    text-align: center;
+    padding: 10px 30px 4px 25px;
+}
+.bottom a{
+    color: grey;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
