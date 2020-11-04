@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/location.css">
+    <title>Location</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imageContainer">
+            <div class="mainContainer">
+                <div class="header">
+                    <ul>
+                        <li><i class="fa fa-arrow-left" aria-hidden="true"></i></li>
+                        <li>
+                            <p>Location</p>
+                        </li>
+                        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <div class="mySlides">
+                    <div class="cityContainer">
+                        <img src="images/building.png">
+                        <h2>New York City</h2>
+                        <h5>Located at the southern tip of the State of New York
+                            the city is the center of the new york metropolitan area,
+                            one of the most populous urban in the world.</h5>
+                        <button>Choose</button>
+                    </div>
+                </div>
+                <div class="slideshowContainer">
+                    <div class="mySlides">
+                        <div class="cityContainer">
+                            <img src="images/building.png">
+                            <h2>New York City</h2>
+                            <h5>Located at the southern tip of the State of New York
+                                the city is the center of the new york metropolitan area,
+                                one of the most populous urban in the world.</h5>
+                            <button>Choose</button>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="cityContainer">
+                            <img src="images/building.png">
+                            <h2>Pune</h2>
+                            <h5>Located at the southern tip of the State of New York
+                                the city is the center of the new york metropolitan area.</h5>
+                            <button>Choose</button>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="cityContainer">
+                            <img src="images/building.png">
+                            <h2>Mumbai</h2>
+                            <h5>Located at the southern tip of the State of New York
+                                the city is the center of the new york metropolitan area.</h5>
+                            <button>Choose</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
