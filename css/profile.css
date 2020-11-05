@@ -68,13 +68,14 @@ input{
     border-color: black;
     margin: 15px 25px;
     width: 220px;
-    padding-left: 30px;
+    padding-left:30px;
+    padding-bottom: 5px;
 }
 .profileInfo i{
     position: absolute;
     color:black;
-    left: 35px;
-    top: 230px;
+    left: 30px;
+    top: 235px;
 }
 button{
     background-color: #f44336;
